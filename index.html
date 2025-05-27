@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us - Magical Mugs</title>
+    <!-- Correct integrity and crossorigin attributes -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #fff8f0;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      .logo img {
+        width: 180px;
+        height: auto;
+        display: block;
+        margin: 0 auto 30px;
+        max-width: 100%;
+      }
+
+      /* Responsive logo scaling */
+      @media (max-width: 768px) {
+        .logo img {
+          width: 140px;
+          margin-bottom: 25px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .logo img {
+          width: 120px;
+          margin-bottom: 20px;
+        }
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 3em;
+        color: #6f4e37;
+      }
+
+      .info {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .contact {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 1.6em;
+      }
+
+      .contact p {
+        margin: 6px 0;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .social-links a {
+        padding: 10px 16px;
+        background-color: #6f4e37;
+        color: #fff;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.3s ease;
+        font-size: 16px;
+      }
+
+      .social-links a:hover {
+        background-color: #4e3623;
+      }
+
+      /* Responsive typography and spacing */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 3em;
+        }
+
+        .social-links a {
+          font-size: 14px;
+          padding: 8px 14px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 15px;
+        }
+
+        .social-links {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .social-links a {
+          width: 80%;
+          text-align: center;
+        }
+      }
+      .call-button {
+        margin-left: 10px;
+        padding: 8px 14px;
+        background-color: #6f4e37;
+        color: #fff;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 1rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: background 0.3s ease;
+      }
+
+      .call-button i {
+        font-size: 1rem;
+      }
+
+      .call-button:hover {
+        background-color: #6f4e37;
+      }
+
+      /* Responsive tweaks */
+      @media (max-width: 768px) {
+        .call-button {
+          font-size: 1rem;
+          padding: 7px 12px;
+        }
+
+        .call-button i {
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .call-button {
+          display: block;
+          margin: 8px auto 0;
+          text-align: center;
+          width: fit-content;
+          font-size: 1rem;
+          padding: 8px 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <img
+          src="https://i.postimg.cc/Px21z3cd/logo.png"
+          alt="Magical Mugs Jaipur"
+        />
+      </div>
+
+      <!-- Cafe Name and Address -->
+      <h1>Magical Mugs Jaipur</h1>
+      <div class="info">
+        <p>Near Capital Highstreet, R-Tech Mall</p>
+        <p><b>Jagatpura, Jaipur</b></p>
+      </div>
+
+      <!-- Contact Info -->
+      <!-- Contact Info -->
+      <div class="contact">
+        <p><strong>Contact Person:</strong> Dev Shankar</p>
+        <p>
+          <strong>Phone:</strong
+          ><a href="tel:+919828338306" class="call-button">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          +91-9828338306
+        </p>
+        <p>
+          <a href="contact.vcf" download>
+            <i class="fa fa-address-book" aria-hidden="true"></i> Save Contact
+          </a>
+        </p>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="social-links">
+        <a href="https://wa.me/+919828338306" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a
+          href="https://www.instagram.com/magicalmugs_jaipur/?hl=en"
+          target="_blank"
+        >
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
